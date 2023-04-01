@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   background-color: #050518;
   font-family: sans-serif;
@@ -34,8 +38,7 @@ body {
   color: #fff;
 }
 
-.page-title,
-.calc-title {
+.page-title {
   color: #fff;
   font-size: 3.5rem;
   font-weight: 400;
