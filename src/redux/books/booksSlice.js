@@ -9,14 +9,11 @@ const BooksSlice = createSlice({
   name: 'book',
   initialState,
   reducers: {
-    addBook: (state, action) => {
-      // eslint-disable-next-line no-param-reassign
-      state.books = [...state.books, action.payload];
-    },
-    removeBook: (state, action) => {
-      // eslint-disable-next-line no-param-reassign
-      state.books = state.books.filter((book) => book.id !== action.payload);
-    },
+    addBook: (state, action) => ({ ...state, books: [...state.books, action.payload] }),
+    removeBook: (state, action) => ({
+      ...state,
+      books: state.books.filter((book) => book.id !== action.payload),
+    }),
   },
 });
 
