@@ -1,9 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
 import Categories from './components/Categories';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import { fetchBooks } from './redux/books/booksSlice';
 
 function App() {
+// const { books, isLoading, error } = useSelector((state) => state.book);
+
+  useEffect(() => {
+    fetchBooks();
+  }, []);
+
   return (
     <Router>
       <div className="App">
