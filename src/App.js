@@ -6,7 +6,6 @@ import Home from './components/Home';
 import { fetchBooks } from './redux/books/booksSlice';
 
 function App() {
-// const { books, isLoading, error } = useSelector((state) => state.book);
 
   useEffect(() => {
     fetchBooks();
