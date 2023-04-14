@@ -9,10 +9,11 @@ const Home = () => {
   const handleSubmit = (e) => {
     dispatch(fetchBooks());
     const itemId = uuidv4();
-    const categories = '';
+    // const categories = '';
     e.preventDefault();
     const title = e.target[0].value.trim();
     const author = e.target[1].value.trim();
+    const categories = e.target[2].value;
     dispatch(newBook({
       item_id: itemId, title, author, category: categories,
     }));
@@ -29,9 +30,9 @@ const Home = () => {
         <input type="text" placeholder="title" required />
         <input type="text" placeholder="author" required />
         <select name="choice" className="choice">
-          <option value="first">First Value</option>
-          <option value="second" selected>Second Value</option>
-          <option value="third">Third Value</option>
+          <option value="first">Action</option>
+          <option value="second" selected>Fiction</option>
+          <option value="third">Economy</option>
         </select>
         <button type="submit" className="Rectangle-2">Add Book</button>
       </form>

@@ -10,6 +10,7 @@ ul {
 
 body {
   background-color: #fafafa;
+
   /* background-color: #090606; */
   font-family: sans-serif;
   overflow: auto;
@@ -19,7 +20,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  gap:3rem;
+  gap: 3rem;
   height: 5.938rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: #fff;
@@ -29,7 +30,7 @@ body {
   height: 1rem;
   margin: 1.125rem 41.5rem 0.688rem 2.563rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -52,22 +53,14 @@ form {
   gap: 1rem;
 }
 
-form input,.choice {
+form input,
+.choice {
   width: 18rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
   color: #121212;
   padding: 0.5rem;
-}
-
-.Rectangle-2 {
-  width: 11.5rem;
-  height: 2.813rem;
-  margin: 1.188rem 0 0 2.125rem;
-  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
-  border-radius: 3px;
-  background-color: #0290ff;
 }
 
 .book {
@@ -97,7 +90,7 @@ form input,.choice {
   height: 1.125rem;
   margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -111,7 +104,7 @@ form input,.choice {
   width: 13.25rem;
   height: 1.313rem;
   margin: 0.438rem 0 0.25rem 3.688rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -137,21 +130,21 @@ form input,.choice {
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color:#121212 ;
+  color: #121212;
 }
 
 .title {
   width: 12.313rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -165,7 +158,7 @@ form input,.choice {
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -182,7 +175,7 @@ form input,.choice {
 .button {
   height: 1.188rem;
   margin: 0.188rem 0.932rem 0.125rem 0.932rem;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -203,6 +196,7 @@ form input,.choice {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
   /* margin-right: 5rem; */
   width: 45vw;
   margin-left: 2rem;
