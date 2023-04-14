@@ -22,14 +22,18 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h1>Welcome to Bookstore</h1>
       {books.map((book) => (
         <Book key={book.Id} title={book.title} author={book.author} Id={book.Id} />
       ))}
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="title" required />
         <input type="text" placeholder="author" required />
-        <button type="submit">Add Book</button>
+        <select name="choice" className="choice">
+          <option value="first">First Value</option>
+          <option value="second" selected>Second Value</option>
+          <option value="third">Third Value</option>
+        </select>
+        <button type="submit" className="Rectangle-2">Add Book</button>
       </form>
     </div>
   );
