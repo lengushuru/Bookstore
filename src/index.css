@@ -19,8 +19,8 @@ body {
 .navbar {
   display: flex;
   height: 5.938rem;
-  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
-  background-color: #ffffff;
+  /* padding: 1.438rem 6.188rem 1.688rem 6.25rem; */
+  background-color: #211f1f;
 }
 
 form {
