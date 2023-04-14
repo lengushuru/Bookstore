@@ -13,7 +13,7 @@ const Home = () => {
     e.preventDefault();
     const title = e.target[0].value.trim();
     const author = e.target[1].value.trim();
-    const categories = e.target[2].value;
+    const categories = e.target[2].options[e.target[2].selectedIndex].text;
     dispatch(newBook({
       item_id: itemId, title, author, category: categories,
     }));
@@ -24,7 +24,13 @@ const Home = () => {
   return (
     <div className="home">
       {books.map((book) => (
-        <Book key={book.Id} title={book.title} author={book.author} Id={book.Id} />
+        <Book
+          key={book.Id}
+          title={book.title}
+          author={book.author}
+          Id={book.Id}
+          category={book.category}
+        />
       ))}
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="title" required />
