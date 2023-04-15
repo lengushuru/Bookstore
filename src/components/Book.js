@@ -29,9 +29,6 @@ const Book = ({
           text={`${45}%`}
           styles={buildStyles({
             width: '10px',
-            hieght: '10px',
-            // rotation: 0.25,
-
             // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
             strokeLinecap: 'round',
             textSize: '18px',
