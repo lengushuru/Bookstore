@@ -104,12 +104,12 @@ form input,
 }
 
 .book {
-  width: 84rem;
+  width: 92rem;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem;
-  margin: 0.93rem 6rem;
+  margin: 0.93rem 1rem;
   height: 10.6rem;
   background-color: #fff;
   border-radius: 5px;
