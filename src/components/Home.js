@@ -31,7 +31,8 @@ const Home = () => {
           category={book.category}
         />
       ))}
-      <div className="line">
+      <div className="Line" />
+      <div className="footer">
         <h2 className="add-book">ADD NEW BOOK</h2>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="title" required />

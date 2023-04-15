@@ -28,18 +28,24 @@ const Book = ({
           value={45}
           text={`${45}%`}
           styles={buildStyles({
+            width: '10px',
+            hieght: '10px',
             // rotation: 0.25,
 
             // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
             strokeLinecap: 'round',
             textSize: '18px',
             pathTransitionDuration: 0.5,
-            pathColor: `rgba(62, 152, 199, ${45 / 100})`,
-            textColor: '#f88',
+            pathColor: '#0290ff',
+            textColor: 'transparent',
             trailColor: '#d6d6d6',
-            backgroundColor: '#4386bf',
+            backgroundColor: '#0290ff',
           })}
         />
+        <div>
+          <p className="current">{`${45}%`}</p>
+          <p className="Completed">Completed</p>
+        </div>
       </div>
       <div className="update">
         <p className="Current-Chapter">CURRENT CHAPTER</p>

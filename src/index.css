@@ -36,10 +36,29 @@ body {
   background: rgb(255, 255, 255);
 }
 
-.line {
-  margin: 0 2.438rem 0 0;
-  opacity: 0.5;
+.Line {
+  width: 84rem;
+  height: 0.125rem;
   margin: 0.93rem 6rem;
+  border: solid 1px #e8e8e8;
+}
+
+.footer {
+  margin: 0 6rem;
+}
+
+.add-book {
+  width: 10.875rem;
+  height: 1.5rem;
+  margin: 1.813rem 32.75rem 1.188rem 0;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
 }
 
 .logo-links{
@@ -85,6 +104,7 @@ form input,
 }
 
 .book {
+  width: 84rem;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -226,8 +246,39 @@ form input,
 }
 
 .progress {
-  width: 200px;
+  width: 300px;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #e8e8e8;
+}
+
+.Completed {
+  width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.current {
+  width: 2.938rem;
+  height: 2.438rem;
+  margin: 0.063rem 7.063rem 0 0.688rem;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
 
 .links {
