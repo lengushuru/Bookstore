@@ -9,7 +9,6 @@ const Home = () => {
   const handleSubmit = (e) => {
     dispatch(fetchBooks());
     const itemId = uuidv4();
-    // const categories = '';
     e.preventDefault();
     const title = e.target[0].value.trim();
     const author = e.target[1].value.trim();
@@ -32,6 +31,7 @@ const Home = () => {
           category={book.category}
         />
       ))}
+      <h2 className="add-book">ADD NEW BOOK</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="title" required />
         <input type="text" placeholder="author" required />

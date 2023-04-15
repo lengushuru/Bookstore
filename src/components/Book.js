@@ -28,7 +28,7 @@ const Book = ({
           value={45}
           text={`${45}%`}
           styles={buildStyles({
-            rotation: 0.25,
+            // rotation: 0.25,
 
             // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
             strokeLinecap: 'round',
