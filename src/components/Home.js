@@ -31,17 +31,19 @@ const Home = () => {
           category={book.category}
         />
       ))}
-      <h2 className="add-book">ADD NEW BOOK</h2>
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="title" required />
-        <input type="text" placeholder="author" required />
-        <select name="choice" className="choice">
-          <option value="first">Action</option>
-          <option value="second" selected>Fiction</option>
-          <option value="third">Economy</option>
-        </select>
-        <button type="submit" className="Rectangle-2">Add Book</button>
-      </form>
+      <div className="line">
+        <h2 className="add-book">ADD NEW BOOK</h2>
+        <form onSubmit={handleSubmit}>
+          <input type="text" placeholder="title" required />
+          <input type="text" placeholder="author" required />
+          <select name="choice" className="choice">
+            <option value="first">Action</option>
+            <option value="second" selected>Fiction</option>
+            <option value="third">Economy</option>
+          </select>
+          <button type="submit" className="Rectangle-2">Add Book</button>
+        </form>
+      </div>
     </div>
   );
 };
