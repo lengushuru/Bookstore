@@ -31,7 +31,7 @@ body {
   justify-content: space-between;
   height: 5.938rem;
   width: 100vw;
-  padding:3rem 6rem;
+  padding: 3rem 6rem;
   border-bottom: 1px solid rgb(211, 205, 205);
   background: rgb(255, 255, 255);
 }
@@ -51,7 +51,7 @@ body {
   width: 10.875rem;
   height: 1.5rem;
   margin: 1.813rem 32.75rem 1.188rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -61,7 +61,7 @@ body {
   color: #888;
 }
 
-.logo-links{
+.logo-links {
   display: flex;
   gap: 25px;
   align-items: center;
@@ -271,7 +271,7 @@ form input,
   width: 2.938rem;
   height: 2.438rem;
   margin: 0.063rem 7.063rem 0 0.688rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 2rem;
   font-weight: normal;
   font-stretch: normal;
