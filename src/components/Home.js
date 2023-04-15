@@ -22,22 +22,24 @@ const Home = () => {
 
   return (
     <div className="home">
-      {books.map((book) => (
-        <Book
-          key={book.Id}
-          title={book.title}
-          author={book.author}
-          Id={book.Id}
-          category={book.category}
-        />
-      ))}
+      <div className="container">
+        {books.map((book) => (
+          <Book
+            key={book.Id}
+            title={book.title}
+            author={book.author}
+            Id={book.Id}
+            category={book.category}
+          />
+        ))}
+      </div>
       <div className="Line" />
       <div className="footer">
         <h2 className="add-book">ADD NEW BOOK</h2>
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="title" required />
-          <input type="text" placeholder="author" required />
-          <select name="choice" className="choice">
+          <input type="text" placeholder="book title" className="panel-bg" required />
+          {/* <input type="text" placeholder="author" required /> */}
+          <select name="choice" className="choice Lesson-Panel">
             <option value="first">Action</option>
             <option value="second" selected>Fiction</option>
             <option value="third">Economy</option>
